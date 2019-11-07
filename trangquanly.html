@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="js/listBook.js"></script>
+    <style>
+    .glyphicon-pencil{
+        
+    }
+    .error{
+        /* padding: 100%;
+        align-content: center;
+        width: 100%; */
+    }
+    /* #dang-ky{
+        padding: 2%;
+        align-items: center;
+
+    } */
+    /* #add-book{
+        align-items: center;;
+    } */
+       
+    </style>
+
+</head>
+<body>
+    <!-- <div class="jumbotron"> -->
+        
+        <h1>    
+            <kbd class='fas fa-file-import' style='font-size:24px;color: yellowgreen;'> Thêm sách</kbd>                     
+        </h1>
+<div class="container">        
+    <form id="dang-ky">
+        <b>Tên Sách: </b> <input type="text" id="name" style="width:90%;"> <span class="error" id="name-error"></span> <br>
+        <b>Giá: </b> <input type="number" id="price"> <span class="error" id="price-error"></span> <br>
+        <b>Số Lượng: </b> <input type="number" id="amount"> <span class="error" id="amount-error"></span><br>
+        <b>Nhà Xuất Bản: </b> <input type="text" id="NXB"> <span class="error" id="NXB-error"></span><br>
+        <b>Tác giả: </b> <input type="text" id="author"> <span class="error" id="author-error"></span><br>
+        <b>Giảm giá: </b> <input type="number" id="isSale"> <span class="error" id="isSale-error"></span><br>
+        <b>Số trang: </b> <input type="number" id="page"> <span class="error" id="page-error"></span><br>
+        <b>Năm xuất bản: </b> <input type="text" id="year"> <span class="error" id="year-error"></span><br>
+        <b>Miêu tả: </b> <textarea id="description" cols="30" rows="10"></textarea> <span class="error" id="description-error"></span><br>
+        <b>Phân loại: </b> <input type="text" id="Category"> <span class="error" id="Category-error"></span><br>
+        <b>Phân loại nhỏ: </b> <input type="text" id="subCategory"> <span class="error" id="subCategory-error"></span><br>
+        <div class="row mt-5">
+        <button type="button" onclick="addBook()" id="add-book" class="btn btn-black">Thêm mới sản phẩm</button>
+        </div>
+    </form>
+</div>    
+    <!-- </div> -->
+    <h2><kbd class="fas fa-tasks"> Quản lý</kbd></h2>
+        <!-- <div class="jumbotron"> -->
+        <div class="container">
+            <table class="table" id="data-table">
+                <tr>
+                    <th>Tên Sách</th>
+                    <th>Giá</th>
+                    <th>Số lượng</th>
+                    <th>NXB</th>
+                    <th>Tác giả</th>
+                    <th>Giảm giá</th>
+                    <th>Số trang</th>
+                    <th>Năm XB</th>
+                    <th>Mô tả</th>
+                    <th>Phân loại</th>
+                    <th>Phân loại nhỏ</th>
+                    <th>Tuỳ chọn</th>
+
+
+                </tr>
+
+            </table>
+        </div>
+        <!-- </div> -->
+    <script src="js/show.js"></script>
+    <script src="js/update.js"></script>
+    
+</body>
+</html>
